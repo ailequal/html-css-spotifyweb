@@ -55,13 +55,14 @@ body {
   background-color: green;
 }
 
-
 /* main */
 .main {
   display: flex;
+  flex-wrap: wrap;
   height: calc(100vh - 90px);
   padding: 10px;
   background-color: pink;
+  overflow-y: scroll;
 }
 
 .upgrade {
@@ -86,7 +87,6 @@ body {
   width: 100%;
   margin-top: 80px;
   background-color: brown;
-  overflow-y: scroll;
 }
 
 /* footer */
