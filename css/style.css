@@ -202,25 +202,25 @@ a {
   float: left;
   width: calc(100% - 230px);
   height: 100%;
+  overflow-y: scroll;
   padding: 10px;
   background-color: pink;
-  overflow-y: scroll;
   background-color: rgb(18, 18, 18);
 }
 
-.upgrade {
+.main .upgrade {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 230px);
   height: 80px;
+  z-index: 3;
   background-color: rgba(11, 11, 11, 0.8);
 }
 
-.btn_upgrade {
+.main .btn_upgrade {
   margin-right: 10px;
   padding: 8px 34px;
   border: 1px solid #ffffff;
@@ -229,19 +229,85 @@ a {
   text-transform: uppercase;
 }
 
-.btn_upgrade:hover {
+.main .btn_upgrade:hover {
   transition: scale 0.5s;
   transform: scale(1.05);
 }
 
-.box_main {
+.main .box_main {
   width: 100%;
   margin-top: 80px;
 }
 
+.main .box_main h2 {
+  margin: 10px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.main .box_main h3 {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.main .box_main h4 {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.main .box_main li {
+  color: #b3b3b3;
+}
+
+.main .box_main .nav_bar_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main .box_main .nav_bar_main li {
+  position: relative;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main .box_main .nav_bar_main li:first-child::after {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 2.5px;
+  border-radius: 2px;
+  background-color: #1ed760;
+}
+
+.main .box_main .nav_bar_main a:hover {
+  transition: color 1s;
+  color: #ffffff;
+}
+
+.main .box_main .recently_played .box_music {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(35, 35, 35);
+  text-align: center;
+}
+
+.main .box_main .recently_played .box_music img {
+  width: 150px;
+  height: 150px;
+}
+
 /* footer */
 .footer {
- background-color: rgb(40, 40, 40);
+  z-index: 5;
+  background-color: rgb(40, 40, 40);
 }
 
 .nav_bar_bottom {
@@ -320,7 +386,9 @@ a {
 
 /* small > */
 @media screen and (min-width: 576px) {
-
+  .upgrade {
+    width: calc(100% - 230px);
+  }
 }
 
 /* media queries height */
