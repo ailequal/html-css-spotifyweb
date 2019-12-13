@@ -115,7 +115,8 @@ a {
 
 /* nav_bar_top middle */
 .nav_bar_top .middle {
-  height: calc(100% - 400px);
+  /* nav_bar_top 30px + .top 166px + .bottom 78.719px */
+  height: calc(100% - 274.719px);
 }
 
 .nav_bar_top .middle .btn_playlist {
@@ -141,7 +142,8 @@ a {
 }
 
 .nav_bar_top .middle .playlist {
-  height: calc(100% - 200px);
+  /* h4 22px + btn_playlist 62px */
+  height: calc(100% - 84px);
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -152,7 +154,41 @@ a {
 
 /* nav_bar_top bottom */
 .nav_bar_top .bottom {
-  background-color: green;
+  /* background-color: green; */
+}
+
+.nav_bar_top .bottom .btn_install {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.nav_bar_top .bottom .download {
+  width: 20px;
+  margin-right: 10px;
+  fill: #b3b3b3;
+  vertical-align: middle;
+}
+
+.nav_bar_top .bottom .btn_install span {
+  font-size: 14px;
+}
+
+.nav_bar_top .bottom .btn_profile {
+  display: block;
+  margin: 15px 0;
+}
+
+.nav_bar_top .bottom .btn_profile span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav_bar_top .bottom .btn_profile img {
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 /* main */
@@ -227,6 +263,11 @@ a {
   .nav_bar_top .middle {
     display: none;
   }
+
+  .nav_bar_top .bottom .btn_install span,
+  .nav_bar_top .bottom .btn_profile span {
+    display: none;
+}
 
   .upgrade {
     width: calc(100% - 60px);
