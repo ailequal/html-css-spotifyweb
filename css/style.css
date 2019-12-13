@@ -9,14 +9,14 @@ body {
   min-width: 300px;
   min-height: 100px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 ul {
   list-style: none;
 }
 
-a {
+h1, h2, h3, h4, a {
   text-decoration: none;
   color: #b3b3b3;
 }
@@ -28,21 +28,13 @@ a {
 }
 
 .clearfix::after {
-  content: ‘’;
+  content: '';
   display: table;
   clear: both;
 }
 
 .white {
   color: #ffffff;
-}
-
-.grey {
-  color: #b3b3b3;
-}
-
-.btn {
-  padding: 10px 20px;
 }
 
 /* header */
@@ -59,23 +51,21 @@ a {
   background-color: rgb(3, 3, 3);
 }
 
-.nav_bar_top .top a,
-.nav_bar_top .middle a {
+.nav_bar_top a {
   display: block;
-  font-size: 14px;
 }
 
 .nav_bar_top .top .menu svg,
-.nav_bar_top .middle .playlist svg {
+.nav_bar_top .middle .playlist svg,
+.nav_bar_top .bottom .btn_install svg {
   margin-right: 10px;
   vertical-align: middle;
   fill: #b3b3b3;
 }
 
-.nav_bar_top .top .menu li:hover a,
-.nav_bar_top .top .menu li:hover svg,
-.nav_bar_top .middle .playlist li:hover a,
-.nav_bar_top .middle .playlist li:hover svg,
+.nav_bar_top li:hover a,
+.nav_bar_top li:hover svg,
+.nav_bar_top .middle .btn_playlist:hover span,
 .nav_bar_top .bottom .btn_install:hover svg,
 .nav_bar_top .bottom .btn_install:hover span {
   transition: color 1s, fill 1s;
@@ -83,11 +73,12 @@ a {
   fill: #ffffff;
 }
 
-/* nav_bar_top top */
-.nav_bar_top .top .logo_link {
-  display: block;
+.nav_bar_top .middle .btn_playlist:hover .plus {
+  transition: background-color 1s;
+  background-color: #ffffff;
 }
 
+/* nav_bar_top top */
 .nav_bar_top .top .logo {
   width: 130px;
   height: 40px;
@@ -131,18 +122,7 @@ a {
 }
 
 .nav_bar_top .middle .btn_playlist {
-  display: block;
   margin: 15px 0;
-}
-
-.nav_bar_top .middle .btn_playlist:hover .plus {
-  transition: background-color 1s;
-  background-color: #ffffff;
-}
-
-.nav_bar_top .middle .btn_playlist:hover span {
-  transition: color 1s;
-  color: #ffffff;
 }
 
 .nav_bar_top .middle .plus {
@@ -164,30 +144,20 @@ a {
 
 /* nav_bar_top bottom */
 .nav_bar_top .bottom .btn_install {
-  display: block;
   padding-bottom: 10px;
   border-bottom: 1px solid #ffffff;
 }
 
 .nav_bar_top .bottom .download {
   width: 20px;
-  margin-right: 10px;
-  fill: #b3b3b3;
-  vertical-align: middle;
-}
-
-.nav_bar_top .bottom .btn_install span {
-  font-size: 14px;
 }
 
 .nav_bar_top .bottom .btn_profile {
-  display: block;
   margin-top: 15px;
 }
 
 .nav_bar_top .bottom .btn_profile span {
   color: #ffffff;
-  font-size: 14px;
   font-weight: 700;
 }
 
@@ -368,16 +338,22 @@ a {
     text-align: center;
   }
 
-  .nav_bar_top {
-    padding: 5px;
-  }
-
-  .nav_bar_top .top .logo {
+  .nav_bar_top .top .logo,
+  .nav_bar_top .top .menu span,
+  .nav_bar_top .middle .white,
+  .nav_bar_top .middle .btn_playlist,
+  .nav_bar_top .middle .playlist,
+  .nav_bar_top .bottom .btn_install span,
+  .nav_bar_top .bottom .btn_profile span {
     display: none;
   }
 
   .nav_bar_top .top .logo-small {
     display: inline-block;
+  }
+
+  .nav_bar_top {
+    padding: 5px;
   }
 
   .nav_bar_top .top .menu li:first-child::before {
@@ -388,19 +364,9 @@ a {
   margin-right: 0;
   }
 
-  .nav_bar_top .top .menu span {
-    display: none;
-  }
-
   .nav_bar_top .middle {
     /* .top 171px + .top li 20px + .bottom 77.719px + .bottom img 15px; */
     height: calc(100% - 283.719px);
-  }
-
-  .nav_bar_top .middle .white,
-  .nav_bar_top .middle .btn_playlist,
-  .nav_bar_top .middle .playlist {
-    display: none;
   }
 
   .nav_bar_top .bottom .btn_install {
@@ -415,11 +381,6 @@ a {
   .nav_bar_top .bottom .btn_profile img {
     margin-right: 0;
   }
-
-  .nav_bar_top .bottom .btn_install span,
-  .nav_bar_top .bottom .btn_profile span {
-    display: none;
-}
 
   .main {
     width: calc(100% - 60px);
