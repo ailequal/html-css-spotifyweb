@@ -24,6 +24,7 @@ a {
 .container_big {
   width: 100%;
   height: calc(100vh - 90px);
+  overflow: hidden;
 }
 
 .clearfix::after {
@@ -213,7 +214,7 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: calc(100% - 230px);
   height: 80px;
   background-color: green;
 }
@@ -233,7 +234,7 @@ a {
 
 /* footer */
 .footer {
-  z-index: 3;
+
 }
 
 .nav_bar_bottom {
@@ -241,12 +242,11 @@ a {
   background-color: red;
 }
 
-/* media queries */
+/* media queries width */
 /* < extra small */
 @media screen and (max-width: 576px) {
   .header {
     width: 60px;
-    overflow: hidden;
     text-align: center;
   }
 
@@ -314,7 +314,18 @@ a {
 
 /* small > */
 @media screen and (min-width: 576px) {
-  .upgrade {
-    width: calc(100% - 230px);
+
+}
+
+/* media queries height */
+/* < extra small */
+@media screen and (max-height: 576px) {
+  .nav_bar_top .middle {
+    height: 183.266px;
   }
+}
+
+/* small > */
+@media screen and (min-height: 576px) {
+
 }
