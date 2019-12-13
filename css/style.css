@@ -66,7 +66,9 @@ a {
 .nav_bar_top .top .menu li:hover a,
 .nav_bar_top .top .menu li:hover svg,
 .nav_bar_top .middle .playlist li:hover a,
-.nav_bar_top .middle .playlist li:hover svg {
+.nav_bar_top .middle .playlist li:hover svg,
+.nav_bar_top .bottom .btn_install:hover svg,
+.nav_bar_top .bottom .btn_install:hover span {
   transition: color 1s, fill 1s;
   color: #ffffff;
   fill: #ffffff;
@@ -86,7 +88,7 @@ a {
 .nav_bar_top .top .logo-small {
   display: none;
   width: 30px;
-  margin: 20px 0;
+  margin: 15px 0 20px 0;
 }
 
 .nav_bar_top .top .menu li {
@@ -144,8 +146,6 @@ a {
 .nav_bar_top .middle .playlist {
   /* h4 22px + btn_playlist 62px */
   height: calc(100% - 84px);
-  /* height: 100%; */
-  overflow: hidden;
   overflow-y: scroll;
 }
 
@@ -221,7 +221,7 @@ a {
 
 /* footer */
 .footer {
-  /* z-index: 99; */
+  z-index: 99;
 }
 
 .nav_bar_bottom {
@@ -262,8 +262,8 @@ a {
   }
 
   .nav_bar_top .middle {
-    /* .top 176px + .top li 20px + .bottom 78.719px */
-    height: calc(100% - 274.719px);
+    /* .top 171px + .top li 20px + .bottom 77.719px + .bottom img 15px; */
+    height: calc(100% - 283.719px);
   }
 
   .nav_bar_top .middle .white,
@@ -276,6 +276,9 @@ a {
     border: 0px;
   }
 
+  .nav_bar_top .bottom .btn_profile {
+    margin: 15px 0;
+  }
 
   .nav_bar_top .bottom .btn_install .download,
   .nav_bar_top .bottom .btn_profile img {
