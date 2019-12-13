@@ -205,6 +205,7 @@ a {
   padding: 10px;
   background-color: pink;
   overflow-y: scroll;
+  background-color: rgb(18, 18, 18);
 }
 
 .upgrade {
@@ -216,30 +217,35 @@ a {
   right: 0;
   width: calc(100% - 230px);
   height: 80px;
-  background-color: green;
+  background-color: rgba(11, 11, 11, 0.8);
 }
 
 .btn_upgrade {
   margin-right: 10px;
+  padding: 8px 34px;
   border: 1px solid #ffffff;
   border-radius: 20px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+
+.btn_upgrade:hover {
+  transition: scale 0.5s;
+  transform: scale(1.05);
 }
 
 .box_main {
   width: 100%;
   margin-top: 80px;
-  background-color: brown;
 }
 
 /* footer */
 .footer {
-
+ background-color: rgb(40, 40, 40);
 }
 
 .nav_bar_bottom {
   height: 90px;
-  background-color: red;
 }
 
 /* media queries width */
