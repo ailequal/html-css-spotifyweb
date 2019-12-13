@@ -244,20 +244,6 @@ a {
   padding: 15px;
 }
 
-/* .main .box_main .layover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background-color: rgba(76, 76, 76, 0.67);
-}
-
-.main .box_main .box_music:hover .layover {
-  display: inline-block;
-} */
-
 .main .box_main h2 {
   margin: 10px;
   font-size: 28px;
@@ -315,6 +301,22 @@ a {
   flex-wrap: wrap;
 }
 
+.main .box_main .recently_played .box_music::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  content: '';
+  background-color: rgba(76, 76, 76, 0.3);
+  display: none;
+}
+
+.main .box_main .recently_played .box_music:hover::before {
+  display: inline-block;
+}
+
 .main .box_main .recently_played .box_music {
   position: relative;
   display: inline-block;
@@ -329,13 +331,14 @@ a {
 
 .main .box_main .recently_played .box_music::after {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  content: '';
-  background-color: rgba(76, 76, 76, 0.67);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '\f144';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
   display: none;
 }
 
