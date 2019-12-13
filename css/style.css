@@ -115,8 +115,8 @@ a {
 
 /* nav_bar_top middle */
 .nav_bar_top .middle {
-  /* nav_bar_top 30px + .top 166px + .bottom 78.719px */
-  height: calc(100% - 274.719px);
+  /* .top 166px + .top li 20px + .bottom 78.719px */
+  height: calc(100% - 264.719px);
 }
 
 .nav_bar_top .middle .btn_playlist {
@@ -144,6 +144,7 @@ a {
 .nav_bar_top .middle .playlist {
   /* h4 22px + btn_playlist 62px */
   height: calc(100% - 84px);
+  /* height: 100%; */
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -153,10 +154,6 @@ a {
 }
 
 /* nav_bar_top bottom */
-.nav_bar_top .bottom {
-  /* background-color: green; */
-}
-
 .nav_bar_top .bottom .btn_install {
   display: block;
   padding-bottom: 10px;
@@ -176,7 +173,7 @@ a {
 
 .nav_bar_top .bottom .btn_profile {
   display: block;
-  margin: 15px 0;
+  margin-top: 15px;
 }
 
 .nav_bar_top .bottom .btn_profile span {
@@ -223,6 +220,10 @@ a {
 }
 
 /* footer */
+.footer {
+  /* z-index: 99; */
+}
+
 .nav_bar_bottom {
   height: 90px;
   background-color: red;
@@ -261,7 +262,24 @@ a {
   }
 
   .nav_bar_top .middle {
+    /* .top 176px + .top li 20px + .bottom 78.719px */
+    height: calc(100% - 274.719px);
+  }
+
+  .nav_bar_top .middle .white,
+  .nav_bar_top .middle .btn_playlist,
+  .nav_bar_top .middle .playlist {
     display: none;
+  }
+
+  .nav_bar_top .bottom .btn_install {
+    border: 0px;
+  }
+
+
+  .nav_bar_top .bottom .btn_install .download,
+  .nav_bar_top .bottom .btn_profile img {
+    margin-right: 0;
   }
 
   .nav_bar_top .bottom .btn_install span,
