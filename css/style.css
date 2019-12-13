@@ -6,6 +6,8 @@
 }
 
 body {
+  min-width: 300px;
+  min-height: 100px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
@@ -17,6 +19,11 @@ ul {
 a {
   text-decoration: none;
   color: #b3b3b3;
+}
+
+.container_big {
+  width: 100%;
+  height: calc(100vh - 90px);
 }
 
 .clearfix::after {
@@ -41,10 +48,11 @@ a {
 .header {
   float: left;
   width: 230px;
-  height: calc(100vh - 90px);
+  height: 100%;
 }
 
 .nav_bar_top {
+  width: 100%;
   height: 100%;
   padding: 20px;
   background-color: rgb(3, 3, 3);
@@ -190,7 +198,9 @@ a {
 
 /* main */
 .main {
-  height: calc(100vh - 90px);
+  float: left;
+  width: calc(100% - 230px);
+  height: 100%;
   padding: 10px;
   background-color: pink;
   overflow-y: scroll;
@@ -203,6 +213,7 @@ a {
   position: fixed;
   top: 0;
   right: 0;
+  width: 100%;
   height: 80px;
   background-color: green;
 }
@@ -215,13 +226,14 @@ a {
 }
 
 .box_main {
+  width: 100%;
   margin-top: 80px;
   background-color: brown;
 }
 
 /* footer */
 .footer {
-  z-index: 99;
+  z-index: 3;
 }
 
 .nav_bar_bottom {
@@ -234,6 +246,7 @@ a {
 @media screen and (max-width: 576px) {
   .header {
     width: 60px;
+    overflow: hidden;
     text-align: center;
   }
 
@@ -289,6 +302,10 @@ a {
   .nav_bar_top .bottom .btn_profile span {
     display: none;
 }
+
+  .main {
+    width: calc(100% - 60px);
+  }
 
   .upgrade {
     width: calc(100% - 60px);
