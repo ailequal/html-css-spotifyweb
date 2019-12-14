@@ -323,7 +323,27 @@ h1, h2, h3, h4, a {
 }
 
 .nav_bar_bottom {
+  display: flex;
+  justify-content: space-between;
   height: 90px;
+}
+
+.nav_bar_bottom .sx {
+
+}
+
+.nav_bar_bottom .sx img,
+.nav_bar_bottom .center img,
+.nav_bar_bottom .dx img {
+  width: 50px;
+}
+
+.nav_bar_bottom .center {
+
+}
+
+.nav_bar_bottom .dx {
+
 }
 
 /* media queries width */
