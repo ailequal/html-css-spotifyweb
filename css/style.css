@@ -55,6 +55,10 @@ h1, h2, h3, h4, a {
   display: block;
 }
 
+.nav_bar_top .top .menu svg:first-child {
+  fill: #ffffff;
+}
+
 .nav_bar_top .top .menu svg,
 .nav_bar_top .middle .playlist svg,
 .nav_bar_top .bottom .btn_install svg {
@@ -224,7 +228,7 @@ h1, h2, h3, h4, a {
   font-size: 12px;
 }
 
-.main .box_main .recently_played a {
+.main .box_main .music a {
   display: inline-block;
   padding: 15px;
 }
@@ -259,12 +263,12 @@ h1, h2, h3, h4, a {
   color: #ffffff;
 }
 
-.main .box_main .recently_played .row {
+.main .box_main .music .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.main .box_main .recently_played .box_music {
+.main .box_main .music .box_music {
   position: relative;
   display: inline-block;
   width: calc(100% / 6 - 20px);
@@ -276,7 +280,7 @@ h1, h2, h3, h4, a {
   text-align: center;
 }
 
-.main .box_main .recently_played .box_music::before {
+.main .box_main .music .box_music::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -288,11 +292,11 @@ h1, h2, h3, h4, a {
   display: none;
 }
 
-.main .box_main .recently_played .box_music:hover::before {
+.main .box_main .music .box_music:hover::before {
   display: inline-block;
 }
 
-.main .box_main .recently_played .box_music::after {
+.main .box_main .music .box_music::after {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -305,11 +309,11 @@ h1, h2, h3, h4, a {
   display: none;
 }
 
-.main .box_main .recently_played .box_music:hover::after {
+.main .box_main .music .box_music:hover::after {
   display: inline-block;
 }
 
-.main .box_main .recently_played .box_music img {
+.main .box_main .music .box_music img {
   width: 100%;
 }
 
