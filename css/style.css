@@ -317,7 +317,9 @@ h1, h2, h3, h4, a {
 
 /* footer */
 .footer {
+  position: relative;
   background-color: rgb(40, 40, 40);
+  z-index: 2;
 }
 
 .nav_bar_bottom {
