@@ -190,7 +190,7 @@ h1, h2, h3, h4, a {
   top: 0;
   right: 0;
   height: 80px;
-  z-index: 3;
+  z-index: 1;
   background-color: rgba(11, 11, 11, 0.8);
 }
 
@@ -272,8 +272,6 @@ h1, h2, h3, h4, a {
   position: relative;
   display: inline-block;
   /* width: calc(100% / 6 - 20px); */
-  /* min-width: 120px; */
-  /* max-width: 200px; */
   /* margin: 10px; */
   border-radius: 10px;
   background-color: rgb(35, 35, 35);
@@ -335,15 +333,6 @@ h1, h2, h3, h4, a {
   width: calc(100% / 3);
 }
 
-/* .nav_bar_bottom .sx,
-.nav_bar_bottom .dx {
-  width: 20%;
-}
-
-.nav_bar_bottom .center {
-  width: 60%;
-} */
-
 .nav_bar_bottom .sx {
   display: flex;
   justify-content: flex-start;
@@ -356,7 +345,7 @@ h1, h2, h3, h4, a {
 }
 
 .nav_bar_bottom .sx .box_info {
-  margin: 0 40px 0 10px;
+  /* margin: 0 40px 0 10px; */
 }
 
 .nav_bar_bottom .sx .box_info a {
@@ -597,14 +586,13 @@ h1, h2, h3, h4, a {
     width: calc(100% - 230px);
   }
 
+  .main .box_main .music .row {
+    justify-content: flex-start;
+  }
 
   .main .box_main .music .box_music {
     width: calc(100% / 2 - 20px);
     margin: 5px;
-  }
-
-  .main .box_main .music .row {
-    justify-content: flex-start;
   }
 
   .nav_bar_bottom .sx .box_info {
@@ -614,13 +602,8 @@ h1, h2, h3, h4, a {
 
 /* medium > */
 @media screen and (min-width: 768px) {
-  .main .box_main .music .row {
-    justify-content: flex-start;
-  }
-
   .main .box_main .music .box_music {
     width: calc(100% / 4 - 20px);
-    margin: 5px;
   }
 
   .nav_bar_bottom .sx .box_info {
@@ -630,10 +613,6 @@ h1, h2, h3, h4, a {
 
 /* large > */
 @media screen and (min-width: 992px) {
-  .main .box_main .music .row {
-    justify-content: flex-start;
-  }
-
   .main .box_main .music .box_music {
     width: calc(100% / 6 - 20px);
     margin: 10px;
@@ -642,13 +621,8 @@ h1, h2, h3, h4, a {
 
 /* extra large > */
 @media screen and (min-width: 1200px) {
-  .main .box_main .music .row {
-    justify-content: flex-start;
-  }
-
   .main .box_main .music .box_music {
     width: 135px;
-    margin: 10px;
   }
 }
 
@@ -658,9 +632,4 @@ h1, h2, h3, h4, a {
   .nav_bar_top .middle {
     height: 183.266px;
   }
-}
-
-/* small > */
-@media screen and (min-height: 576px) {
-
 }
