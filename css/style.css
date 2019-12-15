@@ -578,21 +578,13 @@ h1, h2, h3, h4, a {
   }
 
   .main .box_main .music .row {
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   .main .box_main .music .box_music {
     width: calc(100% / 2 - 20px);
-    min-width: 100px;
-    max-width: 150px;
     margin: 5px;
   }
-
-  /* .nav_bar_bottom .sx,
-  .nav_bar_bottom .center,
-  .nav_bar_bottom .dx {
-    width: calc(100% / 3);
-  } */
 
   .nav_bar_bottom .sx .box_info {
     margin: 0 10px;
@@ -605,15 +597,14 @@ h1, h2, h3, h4, a {
     width: calc(100% - 230px);
   }
 
-  .main .box_main .music .row {
-    justify-content: space-around;
-  }
 
   .main .box_main .music .box_music {
-    width: calc(100% / 3 - 20px);
-    min-width: 118px;
-    max-width: 130px;
+    width: calc(100% / 2 - 20px);
     margin: 5px;
+  }
+
+  .main .box_main .music .row {
+    justify-content: flex-start;
   }
 
   .nav_bar_bottom .sx .box_info {
@@ -629,8 +620,6 @@ h1, h2, h3, h4, a {
 
   .main .box_main .music .box_music {
     width: calc(100% / 4 - 20px);
-    min-width: 118px;
-    max-width: 130px;
     margin: 5px;
   }
 
@@ -647,8 +636,6 @@ h1, h2, h3, h4, a {
 
   .main .box_main .music .box_music {
     width: calc(100% / 6 - 20px);
-    min-width: 120px;
-    max-width: 150px;
     margin: 10px;
   }
 }
@@ -657,6 +644,11 @@ h1, h2, h3, h4, a {
 @media screen and (min-width: 1200px) {
   .main .box_main .music .row {
     justify-content: flex-start;
+  }
+
+  .main .box_main .music .box_music {
+    width: 135px;
+    margin: 10px;
   }
 }
 
